@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaishnavi Thakre | Embedded &amp; IoT Engineer</title>
+<meta name="description" content="Portfolio of Vaishnavi Thakre, ECE graduate working on embedded firmware, IoT and wireless sensing.">
+<style>
+:root{--bg:#fbfaf7;--card:#fff;--ink:#1c2230;--mute:#5c6577;--acc:#0f766e;--line:#e3e0d8;--chip:#e6f4f1}
+@media (prefers-color-scheme:dark){:root{--bg:#10151c;--card:#171e28;--ink:#e8ecf2;--mute:#9aa5b8;--acc:#4fd1c0;--line:#27303d;--chip:#16302d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:var(--acc)}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .w{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav b{margin-right:auto}
+nav a{text-decoration:none;color:var(--mute);font-size:14px}
+header{padding:72px 0 48px}
+h1{font-size:clamp(34px,6vw,54px);line-height:1.1;margin:0 0 8px}
+.role{color:var(--acc);font-weight:600;font-size:19px;margin:0 0 16px}
+header p{max-width:640px;color:var(--mute)}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:var(--acc);color:var(--bg);text-decoration:none;font-weight:600;margin:8px 10px 0 0}
+.btn.o{background:none;border:1px solid var(--acc);color:var(--acc)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 22px}
+.g{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.c{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.c h3{margin:0 0 6px;font-size:18px}
+.c p,.c li{color:var(--mute);font-size:15px;margin:6px 0}
+.c ul{padding-left:18px;margin:8px 0}
+.t{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.t span{background:var(--chip);color:var(--acc);font-size:12px;padding:3px 10px;border-radius:99px}
+.s{margin:0 0 14px}.s b{display:block;margin-bottom:4px}
+.m{color:var(--mute);font-size:14px}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>Vaishnavi Thakre</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></nav>
+
+<header><div class="w">
+<h1>Vaishnavi Thakre</h1>
+<p class="role">Embedded Firmware &amp; IoT Engineer</p>
+<p>ECE graduate who builds firmware, sensor interfaces and wireless data systems on ESP32, Arduino and Raspberry Pi. Interested in Bluetooth validation, test automation and debugging firmware issues.</p>
+<a class="btn" href="#projects">View projects</a><a class="btn o" href="mailto:vaishnavithakre1104@gmail.com">Email me</a>
+</div></header>
+
+<section id="about"><div class="w">
+<h2>About</h2>
+<div class="g">
+<div class="c"><h3>Who I am</h3><p>I completed my B.Tech in Electronics &amp; Communication Engineering at Priyadarshini College of Engineering, Nagpur (2021–2025, 7.10 CGPA). I enjoy turning raw sensor signals into reliable, working systems, and documenting how they work.</p></div>
+<div class="c"><h3>Certifications &amp; Awards</h3><ul><li>ASDC Certification in Embedded Systems &amp; IoT (2025, 84%)</li><li>Third Prize, Meshmerize Techfest (district level), organised by IIT Bombay, Dec 2022</li></ul></div>
+</div></div></section>
+
+<section id="skills"><div class="w">
+<h2>Skills</h2>
+<div class="g">
+<div class="c"><h3>Languages</h3><div class="t"><span>C</span><span>Embedded C</span><span>C++</span><span>Python</span></div></div>
+<div class="c"><h3>Embedded</h3><div class="t"><span>ESP32</span><span>Arduino</span><span>Raspberry Pi</span><span>Sensor drivers</span><span>ADC sampling</span><span>Real-time acquisition</span></div></div>
+<div class="c"><h3>Protocols</h3><div class="t"><span>UART</span><span>SPI</span><span>I2C</span><span>Wi-Fi</span><span>MQTT</span><span>UDP</span></div></div>
+<div class="c"><h3>Tools</h3><div class="t"><span>Arduino IDE</span><span>VS Code</span><span>MATLAB</span><span>RT ToolBox3</span><span>Serial / logic debugging</span></div></div>
+<div class="c"><h3>Automation</h3><div class="t"><span>Articulated robots</span><span>SCARA &amp; cobots</span><span>PLC ladder logic</span><span>HMI</span><span>Industry 4.0</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="w">
+<h2>Projects</h2>
+<div class="g">
+
+<div class="c"><h3>Wearable Health Monitor</h3>
+<p>Smart wristband that tracks heart rate, HRV, SpO2, estimated blood pressure, stress, steps, calories and distance, with zone localization and peer-to-peer distance over a Wi-Fi mesh.</p>
+<ul><li>Pulse peak detection with threshold edge detection, smoothed using an exponential moving average.</li><li>SpO2 from the red/IR absorbance ratio; HRV from the standard deviation of inter-beat intervals; stress mapped from HRV thresholds.</li><li>Shared I2C bus for pulse oximeter, temperature, motion sensors and OLED.</li></ul>
+<div class="t"><span>XIAO ESP32-C3</span><span>MAX30102/5</span><span>TMP117</span><span>MPU9250</span><span>OLED</span><span>MQTT</span><span>RSSI</span></div></div>
+
+<div class="c"><h3>IoT Sensor Box for Mining &amp; Industry</h3>
+<p>Raspberry Pi monitoring unit combining environmental, gas, dust and vibration sensing with live camera streaming and Wi-Fi based zone location.</p>
+<ul><li>BMP280 (temperature, pressure) and ADS1115 ADC for MQ gas and GP2Y1010 dust sensors over I2C.</li><li>SW-420 vibration input on GPIO; sensor data published over MQTT, video streamed over UDP.</li><li>Approximate location from Wi-Fi BSSID and RSSI; central server dashboard.</li></ul>
+<div class="t"><span>Raspberry Pi</span><span>Python</span><span>MQTT</span><span>UDP</span><span>I2C</span><span>ADS1115</span></div></div>
+
+<div class="c"><h3>IoT Solar Power Monitoring &amp; Optimization</h3>
+<p>B.Tech final-year team project (4 members). An ESP32 monitors panel voltage, load voltage and light intensity, and switches between solar panels and super-capacitor storage through relays to keep load power steady.</p>
+<ul><li>ADC-based sampling and threshold-triggered actuation.</li><li>Local LCD display and cloud upload for remote monitoring.</li></ul>
+<div class="t"><span>ESP32</span><span>Super-capacitors</span><span>Relays</span><span>LCD</span><span>Cloud IoT</span></div></div>
+
+<div class="c"><h3>Shaft &amp; Bearing Assembly with Articulated Robot</h3>
+<p>Industrial training mini project (BEST, BIT Wardha). A Mitsubishi articulated robot performs pick-and-place between a loading cylinder and a pneumatic press-fit cylinder for consistent assembly.</p>
+<ul><li>Programmed with RT ToolBox3 and teach pendant.</li><li>Also covered palletizing and weight-based sorting.</li></ul>
+<div class="t"><span>Mitsubishi robot</span><span>RT ToolBox3</span><span>Pneumatics</span></div></div>
+
+<div class="c"><h3>Multi-Level Automated Car Parking (PLC)</h3>
+<p>Team project (4 members) in industrial training. A PLC detects vehicles with proximity sensors, identifies vehicle type by weight, controls entry/exit gates and shows free slots on an HMI.</p>
+<ul><li>Up/down counters for slot tracking, latching logic for gates, interlocks when full.</li></ul>
+<div class="t"><span>PLC</span><span>Ladder logic</span><span>HMI</span><span>Sensors</span></div></div>
+
+<div class="c"><h3>Line Follower Bot (LDR)</h3>
+<p>Autonomous robot that follows a white line using LDR optical sensing, calibrated for variable lighting, with firmware in Embedded C driving the motors.</p>
+<div class="t"><span>Embedded C</span><span>LDR</span><span>Motors</span></div></div>
+
+</div></div></section>
+
+<section id="experience"><div class="w">
+<h2>Experience</h2>
+<div class="s"><b>Project Engineer Trainee, Sarvaksh Communication Technologies Pvt Ltd (VNIT Nagpur)</b>
+<div class="m">Developed and tested C and Python firmware for microcontroller systems, interfaced sensors over I2C, SPI and UART, built Wi-Fi, MQTT and UDP data flows, and debugged and documented communication issues.</div></div>
+<div class="s"><b>Industrial Internship, Bajaj Engineering Skills Training, BIT Wardha (Jul–Dec 2025)</b>
+<div class="m">Trained in mechatronics, motion control and sensors; built Arduino/ESP32 IoT monitoring solutions; programmed robots for automation tasks.</div></div>
+</div></section>
+
+<section id="contact"><div class="w">
+<h2>Contact</h2>
+<p>Open to firmware, automation and IoT roles.</p>
+<a class="btn" href="mailto:vaishnavithakre1104@gmail.com">vaishnavithakre1104@gmail.com</a>
+<a class="btn o" href="https://linkedin.com/in/vaishnavi-thakre-72a126288">LinkedIn</a>
+<a class="btn o" href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a>
+</div></section>
+
+<footer><div class="w">© Vaishnavi Thakre · Nagpur, India</div></footer>
+</body>
+</html>
